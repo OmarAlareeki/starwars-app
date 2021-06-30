@@ -21,13 +21,10 @@ async function getData() {
     let starshipsCapacity = currentComponent.passengers;
 
     li.innerHTML = starshipsName + "<BR>";
-    p.innerHTML = "Model : " + starshipsDescrip + "<BR>" + "Number of passangers : "  + starshipsCapacity;
+    p.innerHTML = "Model : " + starshipsDescrip + "<BR>" + "Passangers : "  + starshipsCapacity;
        // styling list components
-       li.setAttribute('style', 'display: block;'+
-        'border:2px solid #f8f8f8;'+
-        'padding:15px;'+
-        'width:40%;'+
-        'margin:5px;font-Size:20px');
+       li.setAttribute('style', 'display: block;border:2px solid #f8f8f8;padding:15px;'+
+        'width:40%;margin:5px;font-Size:20px');
        p.setAttribute('style','font-Size:14px;margin-top:10px')
          // inserting li component in the main table ul
        ul.appendChild(li);
